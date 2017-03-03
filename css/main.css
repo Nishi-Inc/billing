@@ -25,6 +25,12 @@ footer {
     margin-bottom: 5%;
 }
 
+.floating-btn > .to-the-new-system {
+    position: fixed;
+    right: 1%;
+    bottom: 2%;
+}
+
 .item input {
     width: 100%;
 }

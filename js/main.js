@@ -141,6 +141,10 @@ $(document).ready(function () {
         updateTotals();
     };
 
+    body.on('click', '.to-the-new-system', function (e) {
+        window.location.href = 'https://billing.clay.fish';
+    });
+
     body.on('change', '#company-name', function (e) {
         var companyName = $(this).val();
         utils.setCookie(COMPANY_NAME, companyName, DEFAULT_COOKIE_LIFE);
@@ -388,5 +392,5 @@ $(document).ready(function () {
         checkServiceTaxApplicability();
     }
 
-
+    $('#info-modal').modal('toggle');
 }); // END DOCUMENT READY
